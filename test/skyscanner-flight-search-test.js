@@ -1,17 +1,8 @@
-import { SkyscannerFlightSearch } from "./public/skyscanner-flight-search/skyscanner-flight-search";
-
+import { SkyscannerFlightSearch } from "../public/skyscanner-flight-search/skyscanner-flight-search.js";
+import { TestUtils } from "./test-utils.js";
 describe("simplest test", () => {
-  let element, shadowRoot;
-  beforeEach(() => {
-    element = document.createElement("skyscanner-flight-search");
-    shadowRoot = element.shadowRoot;
-    document.body.append(element);
-  });
-
-  // check that the exposed API works
-  describe("init", () => {
-    it("should add an in the shadow root", () => {
-      expect(shadowRoot.querySelector("firstdiv")).toBeTruthy();
+    it("first try (using TestUtils)", async() => {
+        const { shadowRoot } = await TestUtils.render("skyscanner-flight-search");
+        expect(shadowRoot.querySelector("#firstdiv")).toBeTruthy();
     });
-  });
 });

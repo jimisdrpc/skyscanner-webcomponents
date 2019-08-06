@@ -1,18 +1,20 @@
 {
-  "name": "sktscanner-flight-search",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "express": "^4.17.1",
-    "jasmine": "^3.4.0",
-    "mocha": "^6.2.0"
-  },
-  "scripts": {
-    "test": "karma start config/karma.conf.js"
-  },
-  "devDependencies": {
-    "karma": "^4.2.0",
-    "karma-chrome-launcher": "^3.0.0",
-    "karma-jasmine": "^2.0.1"
-  }
+    "name": "sktscanner-flight-search",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "karma-spec-reporter": "0.0.32"
+    },
+    "scripts": {
+        "test": "karma start config/karma.conf.js"
+    },
+    "devDependencies": {
+        "@webcomponents/webcomponentsjs": "^2.2.10",
+        "express": "^4.17.1",
+        "jasmine": "^3.4.0",
+        "karma": "^4.2.0",
+        "karma-chrome-launcher": "^3.0.0",
+        "karma-jasmine": "^2.0.1",
+        "mocha": "^6.2.0"
+    }
 }
