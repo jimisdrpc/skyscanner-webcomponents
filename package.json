@@ -8,23 +8,16 @@
         "test": "karma start config/karma.conf.js"
     },
     "devDependencies": {
-        "@open-wc/testing": "^2.0.3",
-        "@open-wc/testing-karma": "^3.0.4",
-        "@webcomponents/webcomponentsjs": "^2.2.0",
-        "babel-eslint": "^10.0.2",
-        "deepmerge": "^4.0.0",
-        "es-dev-server": "^1.6.7",
+        "express": "^4.17.1",
         "eslint": "^6.0.1",
         "eslint-config-google": "^0.13.0",
+        "lit-element": "^2.2.0",
+        "prettier": "1.18.2",
         "karma": "^4.2.0",
         "karma-chrome-launcher": "^3.0.0",
         "karma-fixture": "^0.2.6",
         "karma-jasmine": "^2.0.1",
         "karma-script-launcher": "^1.0.0",
-        "karma-spec-reporter": "0.0.32",
-        "lit-element": "^2.2.0",
-        "prettier": "1.18.2",
-        "wct-browser-legacy": "^1.0.2",
-        "web-component-tester": "^6.9.2"
+        "karma-spec-reporter": "0.0.32"
     }
 }
